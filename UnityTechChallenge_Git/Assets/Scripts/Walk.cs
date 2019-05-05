@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Walk : MonoBehaviour
 {
+    public int current = 100;
+    public int max = 20;
 
     private Animator animator;
 

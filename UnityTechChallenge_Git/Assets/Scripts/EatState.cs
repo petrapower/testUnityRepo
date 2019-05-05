@@ -27,6 +27,7 @@ public class EatState : StateMachineBehaviour {
                 {
                     Debug.Log("Found it");
                     Destroy(item);
+                    break;
                 }
             }
         }
