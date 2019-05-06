@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/BallEater.unity
+- path: Assets/TiledScene/TiledMap.unity
   isLoaded: 1
   isActive: 1

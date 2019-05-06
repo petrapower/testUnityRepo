@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "UnityTechChallenge_Git",
+"dataUrl": "WebGLTiledMap.data.unityweb",
+"asmCodeUrl": "WebGLTiledMap.asm.code.unityweb",
+"asmMemoryUrl": "WebGLTiledMap.asm.memory.unityweb",
+"asmFrameworkUrl": "WebGLTiledMap.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

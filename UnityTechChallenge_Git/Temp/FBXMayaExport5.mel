@@ -1,0 +1,22 @@
+print "Starting maya loading and fbx conversion \n";
+	
+if (`file -q -exists "/Users/petra/Udemy-Unity/repos/testGitUnityRepo/testUnityRepo/UnityTechChallenge_Git/Assets/purpleWizard.mb"`)
+{		
+	file -o "/Users/petra/Udemy-Unity/repos/testGitUnityRepo/testUnityRepo/UnityTechChallenge_Git/Assets/purpleWizard.mb";
+	FBXExportEmbeddedTextures -v false;
+	// FBXExportHardEdges -v true;
+	FBXExportApplyConstantKeyReducer -v false;
+	FBXExportShowUI -v false;
+
+	print "Before fbx export\n";
+	FBXExport -f "/Users/petra/Udemy-Unity/repos/testGitUnityRepo/testUnityRepo/UnityTechChallenge_Git/Temp/ExportedFBXFile.fbx";
+	print "after fbx export\n";
+}
+else
+	print "Could not open Maya file.";
+
+sysFile -delete "/Users/petra/Udemy-Unity/repos/testGitUnityRepo/testUnityRepo/UnityTechChallenge_Git/Temp/CommandPipe";
+
+$donepipeKill = `fopen "/Users/petra/Udemy-Unity/repos/testGitUnityRepo/testUnityRepo/UnityTechChallenge_Git/Temp/SyncPipeKill" "w"`;
+fwrite $donepipeKill "Done";
+fclose $donepipeKill;

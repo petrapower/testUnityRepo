@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 193942742393504284}
   - component: {fileID: 33504975482719928}
   - component: {fileID: 23778549638005930}
+  - component: {fileID: 64181099828151066}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Tree
@@ -398,7 +399,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -448,6 +449,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1049608793236244}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64181099828151066
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876091936919610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 43778168940554320, guid: 9d00ea194977a49538552f26096de424, type: 2}
 --- !u!135 &135035187125379052
 SphereCollider:
   m_ObjectHideFlags: 1
